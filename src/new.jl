@@ -22,7 +22,6 @@ function minfunc(f, a, b, n)
             println("found solution")
             return g
         else
-            println("secant fails")
             return -1
         end
     end
