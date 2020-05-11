@@ -23,7 +23,7 @@ function minfunc(f, a, b, n)
             return g
         else
             println("secant fails")
-            return
+            return -1
         end
     end
     return a_temp - f(a_temp)*(b_temp - a_temp)/(f(b_temp) - f(a_temp))
