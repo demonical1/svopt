@@ -1,4 +1,4 @@
-module svopt
+module new
 
 function minfunc(f, a, b, n)
     if f(a)*f(b) >= 0
