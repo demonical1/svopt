@@ -10,9 +10,10 @@ notifications:
   email: false
 after_success:
   - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
+  - bash <(curl -s https://codecov.io/bash)
 jobs:
   allow_failures:
     - julia: nightly
   fast_finish: true
-script: bash <(curl -s https://codecov.io/bash)
+
 
